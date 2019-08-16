@@ -51,7 +51,7 @@ public class Driver_Factory {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setBrowserName("chrome");
         try {
-            driver = new RemoteWebDriver(new URL("http://82.26.252.87:8080/wd/hub"), capabilities);
+            driver = new RemoteWebDriver(new URL("http://JenkinIP:PORT/wd/hub"), capabilities);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

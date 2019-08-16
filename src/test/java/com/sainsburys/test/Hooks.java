@@ -14,8 +14,8 @@ public class Hooks {
 
     @Before
     public void setUp(){
-        //driverFactory.runOnLocalHost();
-        driverFactory.runOnRemoteHost();
+        driverFactory.runOnLocalHost();
+        //driverFactory.runOnRemoteHost();
         driverFactory.goToUrl(url);
         System.out.println("loading: "+ url);
         driverFactory.maxiBrowser();
